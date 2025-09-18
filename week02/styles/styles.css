@@ -1,13 +1,8 @@
-
-* { 
-    margin: 0;
-    padding: 0;
-}
 nav {
     background-color: darkblue;
     padding: 10px;
-}
-
+    border: 1px solide darkblue}
+    
 nav a{
     color: white;
     display: block;
@@ -16,6 +11,7 @@ nav a{
 
 h1 {
     color: darkblue;
+    border: 1px solid darkblue;
 }
 
 img {
@@ -29,4 +25,3 @@ img {
 p {
     padding: 10px;
 }
-
