@@ -1,52 +1,15 @@
-/* Reset default margins and paddings */
-* {
-    margin: 0;
-    padding: 0;
-}
 
-/* Navigation bar */
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 10px;
-}
-
-/* Headings */
-h1 {
-    color: darkblue;
-    border: 1px solid darkblue; /* Fixed: border requires style + width */
-    margin: 0.5em;
-}
 
 /* Main content */
 main {
     max-width: 840px;
 }
 
-main img {
-    width: 150px;
-    height: auto;
-    margin: 1em;
-    border: 1.5px solid rgb(8, 230, 141);
-    padding: 15px;
-    box-shadow: 0 0 30px gray;
-}
-
-/* Paragraphs */
-p {
-    padding: 0;
-}
-
 /* Sidebar */
 aside { 
     width: 20em;
     margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* rgba allows transparency, hex does not */
+    border: 1px solid rgb(0, 0, 0, 0.2); /* rgba allows transparency, hex does not */
     padding: 10px;
     background-color: #eee;
     color: #333; 
@@ -56,6 +19,16 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Paragraphs */
+p {
+    padding: 0;
 }
 
 /* Footer */
