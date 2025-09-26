@@ -1,11 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+/* Headings */
+
+h1 {
+    color: darkblue;
+    margin: 0.5em 0;
+    font-size: 2em;
+}
 
 
-/* Main content */
 main {
     max-width: 840px;
 }
 
-/* Sidebar */
+main img { 
+    width: 150px; 
+    height: auto; 
+    margin: 1em;
+    border: 1.5px solid rgb(230, 8, 163); 
+    padding: 15px; 
+    box-shadow: 0 0 30px gray; 
+} 
+
+
+
 aside { 
     width: 20em;
     margin: 1em;
@@ -22,8 +55,9 @@ aside img {
 }
 
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
+
 }
 
 /* Paragraphs */
