@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Navigation bar */
@@ -23,6 +24,23 @@ h1 {
     font-size: 2em;
 }
 
+.box {
+    margin: 1rem;
+    border:1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+}
+
+
+
+
 
 main {
     max-width: 840px;
@@ -34,7 +52,8 @@ main img {
     margin: 1em;
     border: 1.5px solid rgb(230, 8, 163); 
     padding: 15px; 
-    box-shadow: 0 0 30px gray; 
+    box-shadow: 0 0 30px gray;
+    float: right; 
 } 
 
 
