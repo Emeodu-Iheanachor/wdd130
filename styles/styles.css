@@ -53,7 +53,8 @@ main img {
     border: 1.5px solid rgb(230, 8, 163); 
     padding: 15px; 
     box-shadow: 0 0 30px gray;
-    float: right; 
+    float: right;
+    z-index: 5 
 } 
 
 
@@ -71,12 +72,6 @@ aside {
 aside img {
     width: 200px;
     height: auto;
-}
-
-main img {
-    width: 200px;
-    height: auto;
-
 }
 
 /* Paragraphs */
