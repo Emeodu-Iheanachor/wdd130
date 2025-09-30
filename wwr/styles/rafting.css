@@ -23,8 +23,8 @@ body {
   background: var(--light-bg);
 }
 
-head h1{
-  color:var(--primary-color);
+h1 {
+  color: var(--primary-color);
 }
 
 /* ========== Header ========== */
