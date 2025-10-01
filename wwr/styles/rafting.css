@@ -177,3 +177,8 @@ footer .social-media a img {
 footer .social-media a img:hover {
   transform: scale(1.1);
 }
+
+.social-media a {
+  text-decoration: none;
+  color: inherit; /* optional, makes it match parent text */
+}
