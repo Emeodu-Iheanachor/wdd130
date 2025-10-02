@@ -7,24 +7,17 @@
   --body-color: #1a1818;
   --heading-color: #333333;
   --text-color: #333;
-  --heading-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-
+  --heading-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --font-stack: Arial, Helvetica, sans-serif;
+  --light-bg: #f5f5f5;
 }
 
-
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
-
-header {
-  background-color: var(--primary-color);
-  color: var(--accent1-color);
-}
-
-
 
 body {
   font-family: var(--font-stack);
@@ -33,36 +26,52 @@ body {
   background: var(--light-bg);
 }
 
+/* Layout Containers */
 header, main, footer {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img.logo {
+  max-height: 60px;
+}
+
+nav a {
+  color: var(--accent1-color);
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Typography */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--heading-color);
+  margin-bottom: 1rem;
 }
 
-nav, p, section, article {margin: 1rem;
-  margin: 1rem;
-  padding: .5rem;
+p {
+  margin-bottom: 1rem;
 }
 
-.social-media a {
-  text-decoration: none;
-  }
-
-.social-media img {
-  width: 4rem;
-  height: 4rem;
-  float: right;
-}
-
-
+/* Hero Section */
 .hero {
   position: relative;
 }
-
 
 .hero img {
   display: block;
@@ -70,10 +79,9 @@ nav, p, section, article {margin: 1rem;
   height: auto;
 }
 
-.hero h1,
-.hero h2 {
+.hero h1 {
   position: absolute;
-  top: 4rem;
+  top: 2rem;
   width: 100%;
   background-color: var(--secondary-color);
   color: var(--accent1-color);
@@ -88,18 +96,50 @@ nav, p, section, article {margin: 1rem;
   right: 1rem;
   background-color: var(--accent1-color);
   border: 2px solid var(--secondary-color);
-  margin-bottom: 2rem;
-
+  padding: 1rem;
 }
 
 .hero article img {
   float: right;
   width: 125px;
-  margin: 0 0 0 1rem;
-
+  margin-left: 1rem;
 }
 
-.footer {
-  text-align: center;
+/* Sections */
+section {
+  margin: 2rem 0;
   padding: 1rem;
+}
+
+section img.article-img {
+  max-width: 250px;
+  float: right;
+  margin-left: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: var(--primary-color);
+  color: var(--accent1-color);
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+/* Social Media */
+footer .social-media {
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .social-media a {
+  display: inline-block;
+}
+
+footer .social-media img {
+  width: 40px;
+  height: 40px;
 }
