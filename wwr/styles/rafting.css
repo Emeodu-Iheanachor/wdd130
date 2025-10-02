@@ -21,7 +21,7 @@
 
 header {
   background-color: var(--primary-color);
-  color: varf(--accent1-color);
+  color: var(--accent1-color);
 }
 
 
@@ -38,7 +38,7 @@ header, main, footer {
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: var(--heading-font);
   color: var(--heading-color);
 }
@@ -69,7 +69,8 @@ nav, p, section, article {margin: 1rem;
   height: auto;
 }
 
-.hero h1, h2, h3 {
+.hero h1,
+.hero h2 {
   position: absolute;
   top: 4rem;
   width: 100%;
