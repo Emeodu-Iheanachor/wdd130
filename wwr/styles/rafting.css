@@ -1,178 +1,98 @@
 /* ========== Global Styles ========== */
 :root {
-  --primary-color: #004d40;
-  --secondary-color: #009688;
-  --accent-color: #ffcc00;
+  --primary-color: #055a05;
+  --secondary-color: #0a8a0a;
+  --accent1-color: #f0f8f0;
+  --accent2-color: #e9c46a;
+  --body-color: #1a1818;
+  --heading-color: #333333;
   --text-color: #333;
-  --light-bg: #f5f5f5;
-  --white: #fff;
-  --max-width: 1200px;
-  --font-stack: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --heading-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+
 }
 
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  
 }
+
+header {
+  background-color: var(--primary-color);
+  color: varf(--accent1-color);
+}
+
+
 
 body {
   font-family: var(--font-stack);
   line-height: 1.6;
-  color: var(--text-color);
+  color: var(--body-color);
   background: var(--light-bg);
 }
 
-/* ========== Header ========== */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: var(--primary-color);
-  color: var(--white);
+header, main, footer {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-header .logo {
-  width: 80px;
-  border-radius: 50%;
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--heading-color);
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
+nav, p, section, article {margin: 1rem;
+  margin: 1rem;
+  padding: .5rem;
 }
 
-header nav a {
-  color: var(--white);
+.social-media a {
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
 }
 
-header nav a:hover,
-header nav a.active {
-  color: var(--accent-color);
+.social-media img {
+  width: 4rem;
+  height: 4rem;
 }
 
-/* ========== Hero Section ========== */
+
 .hero {
   position: relative;
-  text-align: center;
-  color: var(--white);
 }
 
-.hero-img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+
+.hero img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
-.hero h1,
+.hero h1, h2, h3 {
+  position: absolute;
+  top: 4rem;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+  padding: 1rem;
+  text-align: center;
+}
+
 .hero article {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  max-width: 80%;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: var(--accent1-color);
+  border: 2px solid var(--secondary-color);
+  margin-bottom: 2rem;
+
 }
 
-.hero h1 {
-  top: 25%;
-  font-size: 2.5rem;
-  color: var(--accent-color);
-}
-
-.hero article {
-  top: 55%;
-  font-size: 1.1rem;
-}
-
-/* ========== About Section ========== */
-main article {
-  max-width: var(--max-width);
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.article-img {
+.hero article img {
   float: right;
-  width: 250px;
-  margin: 0 0 1rem 1rem;
-  border-radius: 10px;
-}
+  width: 125px;
+  margin: 0 0 0 1rem;
 
-main article h2 {
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-main article p {
-  text-align: justify;
-}
-
-/* ========== History Section ========== */
-.history {
-  max-width: var(--max-width);
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: var(--white);
-  border-left: 5px solid var(--secondary-color);
-  border-radius: 5px;
-}
-
-.history h2 {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-}
-
-/* ========== Adventure Section ========== */
-.adventure {
-  text-align: center;
-  padding: 2rem;
-  background: var(--secondary-color);
-  color: var(--white);
-}
-
-.adventure h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-/* ========== Footer ========== */
-footer {
-  background: var(--primary-color);
-  color: var(--white);
-  text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
-}
-
-footer p {
-  margin-bottom: 0.5rem;
-}
-
-footer .social-media {
-  margin-top: 0.5rem;
-}
-
-footer .social-media a {
-  text-decoration: none;
-}
-
-footer .social-media a img {
-  width: 30px;
-  margin: 0 0.5rem;
-  transition: transform 0.3s;
-}
-
-footer .social-media a img:hover {
-  transform: scale(1.1);
 }
