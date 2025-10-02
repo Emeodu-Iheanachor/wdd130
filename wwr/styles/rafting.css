@@ -100,5 +100,6 @@ nav, p, section, article {margin: 1rem;
 }
 
 .footer {
-  alignment-baseline: center;
+  text-align: center;
+  padding: 1rem;
 }
