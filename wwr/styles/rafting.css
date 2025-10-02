@@ -50,11 +50,12 @@ nav, p, section, article {margin: 1rem;
 
 .social-media a {
   text-decoration: none;
-}
+  }
 
 .social-media img {
   width: 4rem;
   height: 4rem;
+  float: right;
 }
 
 
@@ -96,4 +97,8 @@ nav, p, section, article {margin: 1rem;
   width: 125px;
   margin: 0 0 0 1rem;
 
+}
+
+.footer {
+  alignment-baseline: center;
 }
