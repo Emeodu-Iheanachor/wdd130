@@ -47,8 +47,10 @@ nav, p, section, article {margin: 1rem;
 }
 
 .social-media a {
-  display: inline-block
-  }
+  display: inline-block;
+  text-decoration: none;
+}
+  
 
 .social-media img {
   width: 4rem;
