@@ -23,12 +23,37 @@ header,main, footer {
 .grid {
     display: grid;
     align-items: center;
+
 }
 
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+    flex-wrap: wrap
+       
+
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: auto;
+
+    
+}
+
+
+
 nav a {
-    color: white;
-    padding: 10px;
+    color: black;
+    padding: 0.5rem;
     display: block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 }
 
 /* Headings */
@@ -37,6 +62,8 @@ h1 {
     color: darkblue;
     margin: 0.5em 0;
     font-size: 2em;
+    
+  
 }
 
 .box {
@@ -45,18 +72,25 @@ h1 {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+    align-items: center;
 
 }
 
 aside {
     width: 20em;
     text-align: center;
+    padding-left: 10px;
+  
     
 }
 
 
 main {
     max-width: 840px;
+}
+
+main p {
+    align-content:justify;
 }
 
 main img { 
@@ -67,33 +101,37 @@ main img {
     padding: 10px; 
     box-shadow: 0 0 30px gray;
     float: right;
-    z-index: 5 
+    z-index: 2;
 } 
 
+aside .box {
+    align-items: center;
+}
 
-
+/* aside */
 aside { 
-    width: 20em;
+    width: 300px;
     margin: 1em;
     border: 1px solid rgb(0, 0, 0, 0.2); /* rgba allows transparency, hex does not */
     padding: 10px;
     background-color: #eee;
     color: #333; 
     text-align: center; 
+    float: left;
+    height: auto;
+    
+}
+/* aside img */
+aside img {
+    width: 210px;
+    height: auto;
+    border: 1px solid rgb(0 0 0/ 0.2);
+    padding: 0.5rem;
+    margin: 1rem;
+    
     
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Paragraphs */
-p {
-    padding: 0;
-}
 
 /* Footer */
 footer {
@@ -104,24 +142,44 @@ footer {
 
 
 
-
 /* Layout for main and aside */
 main.grid {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* main content wider, aside narrower */
+  grid-template-columns: 1fr 2fr; /* main content wider, aside narrower */
   gap: 20px;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 880px;
+  margin: 30px auto;
   padding: 10px;
+  
+  
+}
+
+
+/* Layout for aside and main */
+aside.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* aside narrower, main content wider */
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    
+    
+}
+
+
+aside p {
+    padding: 1rem;
+    height: auto;
 }
 
 /* Navigation */
 nav.flex {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  background: #004d40;
-  padding: 10px;
+  justify-content: space-evenly;
+  background-color: steelblue;
+  padding: 1rem;
+  align-items: center;
 }
 
 nav.flex a {
@@ -133,20 +191,25 @@ nav.flex a {
 /* Boxes */
 .box {
   background: #f5f5f5;
-  padding: 15px;
-  border-radius: 8px;
+  padding: 30px;
+  border-radius: 10px;
   list-style: none;
 }
 
 .box li {
-  margin: 5px 0;
+  margin: 1rem;
+  border:1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+  align-items: center;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background: #004d40;
-  color: white;
+  background: White;
+  color: rgb(16, 15, 15);
   padding: 15px;
   margin-top: 30px;
 }
