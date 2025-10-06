@@ -143,9 +143,7 @@ footer p {
 .social-media img {
   width: 20px;                /* normal (not big) size */
   height: 20px;
-  filter: 1;
   transition: transform 0.2s ease;
- 
 }
 
 .social-media img:hover {
