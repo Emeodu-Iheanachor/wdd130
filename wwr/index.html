@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Emeodu Raphael Chidiebere Iheanachor / WDD 130 _ White Water Rafting Website Design">
-    <meta name="author" content="Emeodu Raphael Chidiebere Iheanachor">
-    <title>White Water Rafting Adventures</title>
-    <link rel="stylesheet" href="rafting.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Splash White Water Rafting — your destination for thrilling river adventures and guided rafting experiences in Port Harcourt, Nigeria.">
+  <meta name="author" content="Emeodu Raphael Chidiebere Iheanachor">
+  <link rel="stylesheet" href="styles/rafting.css">
+  <title>Home | Splash White Water Rafting</title>
 </head>
 <body>
   <header>
-    <img src="images/wwr_logo.jpg" alt="White Water Rafting Company Logo" class="logo">
+    <div class="logo">
+      <img src="images/wwr_logo.jpg" alt="White Water Rafting Logo">
+      <h1>Splash White Water Rafting</h1>
+    </div>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-<main>
+
+  <main>
+    <!-- HERO SECTION -->
     <section class="hero">
-        <h1>White Water Rafting Adventures</h1>
-       <img src="images/rafting_hero.jpg" alt="Rafting Adventure Background" class="hero-img">
+      <img src="images/rafting-hero.jpg" alt="Adventurers rafting through river rapids" class="hero-img">
       <div class="hero-text">
-        
+        <h2>Experience the Adventure of a Lifetime!</h2>
+        <p>Join us for thrilling white water rafting experiences guided by our expert team.</p>
+        <a href="trips.html" class="cta-button">Explore Our Trips</a>
       </div>
-      <article>
-        <h2>About Us — Exciting Expeditions</h2>
-        <img src="images/happy-clients.jpg" alt="Happy rafting client" class="article-img">
-       
-        <p>
-          Here at Exciting Expeditions, our whitewater rafting trips are designed to provide thrill-seekers with an 
-          unforgettable experience on the water. Our expert guides ensure safety while you navigate through stunning 
-          landscapes and challenging rapids. Our mission is to provide thrilling and safe rafting experiences that 
-          connect you with nature, adventure, and lifelong memories. Whether you're a beginner or a pro, we have got 
-          a river for you. Oars Up!
-        </p>
-      </article>
     </section>
-    <!-- History Section -->
-    <section class="history">
-      <h3>Our History</h3>
-      <p>
-        Exciting Expeditions was founded in 1995 by a group of adventure enthusiasts who wanted to share their love 
-        for the great outdoors. Starting with just a handful of rafts and a passion for exploration, the company has 
-        grown into a leading provider of whitewater rafting experiences. Founded in the spirit of adventure, our company 
-        began with a single raft and a big dream. Today, we have grown into a team of passionate guides sharing 
-        unforgettable river journeys with thousands of adventurers.
-      </p>
+
+    <!-- ABOUT / PURPOSE SECTION (GRID) -->
+    <section class="about-grid">
+      <div class="about-item">
+        <img src="images/rafting-purpose.jpg" alt="Team rafting through the rapids">
+        <div class="about-text">
+          <h3>Our Purpose</h3>
+          <p>
+            At Splash White Water Rafting, we believe in bringing people closer to nature through adventure.
+            Whether you're a beginner or an experienced rafter, our guided tours ensure safety, fun, and memories that last a lifetime.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-item">
+        <img src="images/rafting-team.jpg" alt="Rafting guides and clients smiling together">
+        <div class="about-text">
+          <h3>Our Offerings</h3>
+          <p>
+            From family-friendly floats to intense rapid runs, we offer trips for every skill level. Enjoy breathtaking scenery, expert guides,
+            and the ultimate adrenaline rush. Let’s paddle together!
+          </p>
+        </div>
+      </div>
     </section>
-     <section class="adventure">
-      <h4>Adventure Awaits You!</h4>
-      <!-- Images will be added later -->
+
+    <!-- NEWSLETTER SIGNUP FORM -->
+    <section class="newsletter">
+      <h3>Join Our Adventure Community!</h3>
+      <p>Sign up for our monthly newsletter to get exclusive offers, trip updates, and rafting tips.</p>
+      <form action="#" method="post" class="newsletter-form">
+        <label for="newsletter-name">Full Name:</label>
+        <input type="text" id="newsletter-name" name="name" placeholder="Enter your full name" required>
+
+        <label for="newsletter-email">Email Address:</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
+
+        <button type="submit">Subscribe Now</button>
+      </form>
     </section>
-  <footer>
-    <p>© 2025 🌲 White Water Rafting 🌲 Emeodu Raphael Chidiebere Iheanachor</p>
-    <nav class="social-media">
-      <a href="https://facebook.com"><img src="images/facebook.jpeg" alt="Facebook"></a>
-      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
-      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
-    </nav>
-  </footer>
   </main>
- </body>
+
+  <footer>
+    <p>© 2025 🌲 White Water Rafting 🌲 Emeodu Raphael Chidiebere Iheanachor, BYU.</p>
+    <div class="social-media">
+      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/facebook-square.svg" alt="Facebook">
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/instagram-square.svg" alt="Instagram">
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/linkedin-square.svg" alt="LinkedIn">
+      </a>
+    </div>
+  </footer>
+</body>
 </html>
